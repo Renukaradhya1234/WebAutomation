@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Auto Form Fill Extension",
+    "version": "1.0.0",
+    "description": "Extenstion to Fill the Form automatically...",
+    "permissions" :[
+        "tabs",
+        "activeTab",
+        "nativeMessaging"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*/*"
+            ],
+            "js": [
+                "build/Content/content.min.js"
+            ],
+            "RunAt" : "document_end"
+        }
+    ],
+    "background": {
+        "service_worker": "build/Background/background.min.js"
+    }
+}

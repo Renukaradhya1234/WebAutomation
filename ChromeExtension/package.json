@@ -1,0 +1,26 @@
+{
+	"name": "bundling_files",
+	"version": "1.0.0",
+	"description": "This Project to fill the form automatically in chrome application...",
+	"main": ".",
+	"type": "module",
+	"homepage": ".",
+	"dependencies": {
+		"node": "22.6.0",
+		"jquery": "3.7.1"
+	},
+	"devDependencies": {
+		"ts-loader": "9.5.1",
+		"webpack": "5.93.0",
+		"webpack-cli": "5.1.4",
+		"@types/node": "22.1.0",
+		"@types/chrome": "0.0.270",
+		"@types/jquery": "3.5.30"
+	},
+	"scripts": {
+		"build": "webpack"
+	},
+	"author": {
+		"name": "Renukaradhya T B"
+	}
+}
